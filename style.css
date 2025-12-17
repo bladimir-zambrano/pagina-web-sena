@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+@media(max-width:768px){
+    header,nav,form,aside,section,footer{
+        padding: 10px;
+    }
+    h3{
+        font-size: 1.2rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+}
+.gridcontenedor{
+     display: grid;
+     grid-template-areas: "h h h" "n n n" "s a a" "f f f";
+     gap: 10px;   
+}
+header{
+    grid-area: h;
+    display: flex;
+    border: 8px solid black;
+    justify-content: space-around;
+    background-color: #d3d3d3;
+    align-items: center;
+    padding: 5px;
+}
+section {
+    grid-area: s;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    height: auto;  
+} 
+aside {
+    grid-area: a;
+}
+.imgheader{
+    width: 100%;
+    max-width: 100px;  
+}
+.texheader span {
+    font-size: 5vw;
+    margin: 0;
+   text-shadow:2px 2px 5px rgba(255, 255, 255, 0.9); 
+   padding: 0 !important;  
+}
+.texheader p {
+    margin: 0;
+    font-size: 2vw;  
+}
+nav {
+    grid-area: n;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(255, 136, 0);
+}
+nav a {
+     text-decoration: none;
+     padding: 20px;
+     color: black;
+}
+nav span {
+    color: white;
+}
+form{
+    width: 100%;
+    height: auto;   
+}
+.sectionlista{ 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(37, 36, 36);
+    width: 100%;
+    height: 50%;
+}
+footer{
+    border: 1px solid black;
+    grid-area: f;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(56, 56, 56);
+}
+footer span {
+    color: white;
+}
+.contenedoraside p {
+    text-align: center;
+}
+.contenedoraside h3 {
+    text-align: center;
+    padding: 12px;
+}
+.contenedoraside .imgaside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedoraside{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: "1 2" "3 4";
+    gap: 10px;   
+}
+.caja1{
+  grid-area: 1; 
+}
+.caja2{
+    grid-area: 2;
+}
+.caja3{
+  grid-area: 3;
+}
+.caja4{
+  grid-area: 4;
+}
+.inputform{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: 50%;
+    padding: 10px;  
+}
+.inputform input {
+   width: 100%;
+   padding: 1vh;
+}
+
+
+
+
+
