@@ -2,15 +2,131 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="contenedor">
-        <div><img src="imagenes/Logo2.png" alt=""></div>
-        <div><img src="imagenes/Tarjeta2.png" alt=""></div>
-        <div><img src="imagenes/scholl2.png" alt=""></div>
-        <div><img src="imagenes/paravehiculo2.png" alt=""></div>
+    <div class="gridcontenedor">
+        <header>
+            <div class="texheader">
+            <span>BANCOOP</span>
+            <p>Te ayuda a alcanzar tus metas</p>
+            </div>
+            <div class="imgheader">
+                <img src="imagenes/Logo2.png" alt="" style="border: 3px solid black; border-radius: 30%;object-fit: cover;">
+            </div>
+        </header>
+        <nav>
+            
+                <a href="http://127.0.0.1:5500/indess.html">Creditos</a>
+                <span>|</span>
+                <a href="">Leasing</a>
+                <span>|</span>
+                <a href="">Ahorros</a>
+                <span>|</span>
+                <a href="">Servicio al cliente</a>
+            
+        </nav>
+        <section>
+            
+            <form action="" style="background-color: #817c7c;">
+                <h3 style="background-color: black;color: white; padding: 12px;margin: 20px;font-size: 3vh;border-radius: 10px;">Ingrese a su cuenta</h3><br>
+                
+               
+
+                <div class="inputform">
+                    <div>
+                    <label for="cuenta">Cuenta</label>
+                    <input type="text" id="cuenta" name="cuenta" placeholder="Ingrese Nombre">
+                    </div>
+
+                    <div>
+                    <label for="tipo">Tipo:</label>
+                    <input type="text" id="tipo" name="tipo">
+                    </div>
+
+                    <div>
+                    <label for="clave">Clave:</label>
+                    <input type="text" id="clave" name="clave" placeholder="Ingrese clave">
+                    </div><br>
+                    <button type="submit" style="width: 70%; background-color: rgb(255, 136, 0);font-size: 3vh;">Ingresar</button>
+                </div>
+
+
+            </form>
+
+            <div class="sectionlista">
+         
+                <h3 style="color: rgb(255, 136, 0); background-color: black;">TRANSACCIONES</h3>
+             
+                    
+                    <span style="color: white;">Banca personal></span>
+                     <span style="border-top: 1px solid #555; color: white;">Banca empresarial</span>
+                      <span style="border-top: 1px solid #555;color: white;">Banca seguro></span>
+                      <span style="border-top: 1px solid #555;color: white;">Pago de facturas></span>
+               
+                <h3 style="color: rgb(255, 136, 0); background-color: black;">TARGETAS </h3>
+           
+                  
+                      <span style="color: white;">Credi Visa</span>
+                     <span style="border-top: 1px solid #555;color: white;">Credi Mastercard</span>
+               
+                
+            </div>
+        </section>
+        <aside>
+            <div class="contenedoraside">
+                <div class="cajas1" style="padding: 20px;background-color: #a8a7a7;">
+                    <div class="h3" style="background-color: black;color: white;">
+                    <h3>SOLICITA NUESTROS PRODUCTOS</h3>
+                    </div>
+                    <div class="imgaside">
+                        <img src="imagenes/Tarjeta2.png" alt="" style="margin-top: 25px;object-fit: cover;">
+                    </div>
+                    <p style="font-size: clamp(12px, 2vw, 16px);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo totam molestiae repudiandae dolores id tempore voluptatum architecto assumenda optio fuga iusto labore aliquid, sunt doloribus modi ipsa eius quis dignissimos!</p>
+                </div>
+
+
+                <div class="cajas2" style="padding: 10px;background-color: #a8a7a7;">
+                    <div class="h3" style="background-color: black;color: white;">
+                    <h3>CREDITO HIPOTECARIO</h3>
+                    </div>
+                  <div class="imgaside">
+                    <img src="imagenes/casaahorrar2.png" alt="" style="object-fit: cover;">
+                  </div>  
+                  <p style="font-size: clamp(12px, 2vw, 16px);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo totam molestiae repudiandae dolores id tempore voluptatum architecto assumenda optio fuga iusto labore aliquid, sunt doloribus modi ipsa eius quis dignissimos!</p>
+                </div>
+               
+
+                <div class="cajas3" style="padding: 10px;background-color: #a8a7a7;">
+                    <div class="h3" style="background-color: black;color: white;">
+                    <h3>CREDITO VEHICULOS</h3>
+                    </div>
+                    <div class="imgaside">
+                        <img src="imagenes/paravehiculo2.png" alt="" style="object-fit: cover;">
+                    </div>
+                    <p style="font-size: clamp(12px, 2vw, 16px);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo totam molestiae repudiandae dolores id tempore voluptatum architecto assumenda optio fuga iusto labore aliquid, sunt doloribus modi ipsa eius quis dignissimos!</p>
+                </div>
+
+
+                <div class="cajas4" style="padding: 10px;background-color: #a8a7a7;">
+                    <div class="h3" style="background-color: black;color: white;">
+                    <h3>CREDITO ESTUDIANTIL</h3>
+                    </div>
+                    <div class="imgaside">
+                        <img src="imagenes/scholl2.png" alt="" style="object-fit: cover;">
+                    </div>
+                    <p style="font-size: clamp(12px, 2vw, 16px);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo totam molestiae repudiandae dolores id tempore voluptatum architecto assumenda optio fuga iusto labore aliquid, sunt doloribus modi ipsa eius quis dignissimos!</p>
+                </div>
+            </div>
+        </aside>
+        <footer>
+            <span>Contactame</span><br>
+            <span>Linea Gratuita 018000-930930</span><br>
+            <span>Banco BMN - Todos los derechos reservados</span>
+        </footer>
+
     </div>
 </body>
 </html>
